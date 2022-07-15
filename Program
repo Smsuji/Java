@@ -66,3 +66,100 @@ public class AdditionOfTenNos3 {
 
 -------------------------------------------------------------------------------------------------------
 
+//Factoiral program
+
+package program;
+
+import java.util.Scanner;
+
+public class Factorial4 {
+
+	public static void main(String[] args) {
+
+		int no = 1, fact = 1;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value:");
+		int value = sc.nextInt();
+		System.out.println("Given value is:" + value);
+		sc.close();
+	/*	while(no <= value)
+		{
+			fact = fact * no;
+			no++;
+		} */
+		
+		for(no=1; no <= value; no++) {
+			fact = fact * no;
+		}
+		System.out.println("Factorial value is:" + fact);
+	
+	}
+
+}
+
+-------------------------------------------------------------------------------------------------
+
+//Divisor of given no
+
+package program;
+
+import java.util.Scanner;
+
+public class Divisor5 {
+
+	public static void main(String[] args) {
+
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the divisor");
+		int divisor = sc.nextInt();
+		
+		System.out.println("Enter the number");
+		int no = sc.nextInt();
+		sc.close();
+		while(divisor <= no/2)
+		{
+			if(no%divisor == 0)
+			{
+				System.out.println("No is divisble by:" + divisor);
+			}
+			divisor++;
+		}
+		
+	}
+
+}
+
+------------------------------------------------------------------------------------------------------
+
+// Addition of even nos
+
+package program;
+
+import java.util.Scanner;
+
+public class EvenNo6 {
+
+	public static void main(String[] args) {
+
+		int addition =0, no = 0;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value:");
+		int value = sc.nextInt();
+		sc.close();
+		while(no<=value)
+		{
+			addition = addition + no;
+			no+=2;
+//			System.out.println("Addition of even numbers:" + addition);
+		}
+		System.out.println("Addition of even numbers:" + addition);
+	}
+}
+
+---------------------------------------------------------------------------------------------------------
+
+//Addition of Odd nos
+
+
+
