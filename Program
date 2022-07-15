@@ -1,0 +1,68 @@
+package program;
+
+public class FlowersDemo1 {				//Example for devotee program.
+
+	public static void main(String[] args) {
+		int flowers = 64, temple = 0;
+		while(flowers>1)
+		{
+			flowers = flowers / 2;
+			temple= temple+1;
+			System.out.println("Flowers available:" + flowers);
+			System.out.println("Temple no:" + temple);
+		}
+		
+	}
+
+}
+
+------------------------------------------------------------------------------------------
+package program;
+
+public class ChocolateBoy2 {
+
+	public static void main(String[] args) {
+	
+		int total = 8, times =1;
+		
+		while(times <= 3)
+		{
+			int remaining = total;
+			total = remaining + remaining /2;
+			times++;
+		}
+		System.out.println(total);
+	}
+}
+
+
+----------------------------------------------------------------------------------------------
+//Addition of 10 nos
+
+package program;
+
+import java.util.Scanner;
+
+public class AdditionOfTenNos3 {
+
+	public static void main(String[] args) {
+		int no = 1,  addition =0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value:");
+		int value = sc.nextInt();
+		
+		while(no<= value)
+		{
+			addition = addition + no;
+	
+		no++;
+		
+		}
+		System.out.println("Total : " + addition);
+		sc.close();
+	}
+	
+}
+
+-------------------------------------------------------------------------------------------------------
+
