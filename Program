@@ -161,5 +161,29 @@ public class EvenNo6 {
 
 //Addition of Odd nos
 
+package program;
+
+import java.util.Scanner;
+
+public class OddNo7 {
+
+	public static void main(String[] args) {
+
+		int addition =0, no = 1;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value:");
+		int value = sc.nextInt();
+		sc.close();
+		while(no<=value)
+		{
+			addition = addition + no;
+			no+=2;
+//			System.out.println("Addition of odd numbers:" + addition);
+		}
+		System.out.println("Addition of odd numbers:" + addition);
+	}
+}
+
+-------------------------------------------------------------------------------------------------------
 
 
